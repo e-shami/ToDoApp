@@ -14,7 +14,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export function Body() {
   // getting screen dimensions
-  
+
   const [items, setItems] = useState([]);
   const [text, setText] = useState('');
   const [edit, setEdit] = useState('0');
@@ -36,7 +36,7 @@ export function Body() {
     Keyboard.dismiss();
     setEdit('0');
   };
-  
+
   const setButtonColor = () => {
     if (!text) {
       return 'lightgrey';
@@ -44,7 +44,7 @@ export function Body() {
       return 'skyblue';
     }
   };
-  
+
   return (
     <View style={styles.body}>
       {}
@@ -92,7 +92,7 @@ export function Body() {
                     </Text>
                   </TouchableOpacity>
                 </View>
-                
+
                 <TouchableOpacity
                   onPress={() => {
                     setItems(items.filter(i => i.key !== item.key));
